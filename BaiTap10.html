@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Structure</title>
+    <style>
+        *:hover {
+            outline: 5px solid rgb(255, 0, 0);
+        }
+
+        section,
+        header,
+        hgroup,
+        footer,
+        nav,
+        article,
+        aside,
+        figure,
+        figcaption {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(153, 153, 153, .25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        section,
+        aside {
+            float: left;
+        }
+
+        header,
+        footer {
+            clear: both;
+        }
+
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #pageheader,
+        #pagefooter {
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #sectioncontent1 {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        }
+
+        #asidecontent1 {
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagecontent">
+
+        <header id="pageheader">
+            <hgroup id="pagehgroup">
+                <h1 class="sitename"><a href="/" rel="home" title="Home">HTML5 Structure</a></h1>
+                <h2 class="subtitle">Page Header</h2>
+            </hgroup>
+
+            <nav id="globalnav">
+                <p>Navigation</p>
+            </nav>
+        </header>
+
+        <section id="sectioncontent1">
+            <header id="sectionheader1">
+                <h2>Section Header</h2>
+            </header>
+
+            <article id="articlecontent1">
+                <header id="articleheader1">
+                    <h3>Article Header</h3>
+                </header>
+                <p>Article Content</p>
+                <figure id="figure1">
+                    <img src="image1.jpg" alt="Image Description" style="width: 100%; height: auto;">
+                    <figcaption>Figure Caption</figcaption>
+                </figure>
+                <footer id="articlefooter1">
+                    <p>Article Footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header id="articleheader2">
+                    <h3>Article Header</h3>
+                </header>
+                <p>Article Content</p>
+                <figure id="figure2">
+                    <img src="image2.jpg" alt="Image Description" style="width: 100%; height: auto;">
+                    <figcaption>Figure Caption</figcaption>
+                </figure>
+                <footer id="articlefooter2">
+                    <p>Article Footer</p>
+                </footer>
+            </article>
+
+            <footer id="sectionfooter1">
+                <p>Section Footer</p>
+            </footer>
+        </section>
+
+        <aside id="asidecontent1">
+            <header>
+                <h2>Aside Header</h2>
+            </header>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article Footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article Footer</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Aside Article Header</h3>
+                </header>
+                <p>Aside Article Content</p>
+                <footer>
+                    <p>Aside Article Footer</p>
+                </footer>
+            </article>
+
+            <footer>
+                <p>Aside Footer</p>
+            </footer>
+        </aside>
+
+        <footer id="pagefooter">
+            <p>Page Footer</p>
+        </footer>
+    </div>
+
+    <div>
+        <h1>Danh mục bài tập</h1>
+        <ul>
+            <li><a href="./BaiTap4.html">Bài tập 4</a></li>
+            <li><a href="./BaiTap5.html">Bài tập 5</a></li>
+            <li><a href="./BaiTap6.html">Bài tập 6</a></li>
+            <li><a href="./BaiTap7.html">Bài tập 7</a></li>
+            <li><a href="./BaiTap8.html">Bài tập 8</a></li>
+            <li><a href="./BaiTap9.html">Bài tập 9</a></li>
+            <li><a href="./BaiTap10.html">Bài tập 10</a></li>
+            <li><a href="./BaiTap11.html">Bài tập 11</a></li>
+            <li><a href="./BaiTap12.html">Bài tập 12</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

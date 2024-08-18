@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Structure</title>
+    <style>
+        *:hover {
+            outline: 5px solid rgb(255, 0, 0);
+        }
+
+        section,
+        header,
+        hgroup,
+        footer,
+        nav,
+        article,
+        aside,
+        figure,
+        figcaption {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(153, 153, 153, .25);
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #pagecontent {
+            margin: 0 auto;
+            max-width: 1045px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #pageheader,
+        #pagefooter {
+            max-width: 1020px;
+            min-width: 480px;
+            width: 100%;
+        }
+
+        #maincontent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sectioncontent1 {
+            flex: 2;
+            max-width: 600px;
+            min-width: 400px;
+        }
+
+        #asidecontent1 {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        header#pageheader {
+            text-align: center;
+        }
+
+        #globalnav {
+            text-align: center;
+            background-color: rgba(153, 153, 153, .25);
+            padding: 10px;
+        }
+
+        nav#globalnav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagecontent">
+
+        <header id="pageheader">
+            <hgroup id="pagehgroup">
+                <h1 class="sitename"><a href="/" rel="home" title="Home">HTML5 Structure</a></h1>
+                <img src="./image/khoa_bit.png" alt="Logo Khoa Công nghệ thông tin kinh doanh">
+            </hgroup>
+
+            <nav id="globalnav">
+                <a href="#">Chương trình Đại học</a> |
+                <a href="#">CT Liên thông Đại học</a> |
+                <a href="#">Chương trình Sau đại học</a> |
+                <a href="#">Chương trình quốc tế</a>
+            </nav>
+        </header>
+
+        <div id="maincontent">
+            <section id="sectioncontent1">
+                <header id="sectionheader1">
+                    <h2>Chương trình Đại học</h2>
+                </header>
+
+                <article id="articlecontent1">
+                    <header>
+                        <h3><a
+                                href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-hoach-dinh-nguon-luc-doanh-nghiep-erp">Hệ
+                                thống hoạch định nguồn lực doanh nghiệp (ERP)</a></h3>
+                    </header>
+                    <p>Nhu cầu xã hội đòi hỏi hoạch định các nguồn lực doanh nghiệp phải đáp ứng các yêu cầu đa nhiệm,
+                        giảm chi phí, tăng cường kiểm soát nội vi cũng như điều hành mọi nguồn nhân lực tại các công ty
+                        lớn và vừa.</p>
+                    <figure>
+                        <img src="./image/ERP-300x150.jpg" alt="ERP Image">
+                    </figure>
+                </article>
+            </section>
+
+            <aside id="asidecontent1">
+                <header>
+                    <h2>Liên kết</h2>
+                </header>
+
+                <article>
+                    <h3><a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh">Hệ thống thông tin
+                            kinh doanh</a></h3>
+                    <figure>
+                        <img src="./image/mis-300x150.jpg" alt="Business Information System Image">
+                    </figure>
+                    <p>Nhu cầu xã hội hiện nay, ứng dụng công nghệ thông tin trong quản lý doanh nghiệp ngày càng trở
+                        nên phổ biến và quan trọng.</p>
+                </article>
+            </aside>
+        </div>
+
+        <footer id="pagefooter">
+            <p>© 2024 HTML5 Structure</p>
+        </footer>
+    </div>
+
+    <div>
+        <h1>Danh mục bài tập</h1>
+        <ul>
+            <li><a href="./BaiTap4.html">Bài tập 4</a></li>
+            <li><a href="./BaiTap5.html">Bài tập 5</a></li>
+            <li><a href="./BaiTap6.html">Bài tập 6</a></li>
+            <li><a href="./BaiTap7.html">Bài tập 7</a></li>
+            <li><a href="./BaiTap8.html">Bài tập 8</a></li>
+            <li><a href="./BaiTap9.html">Bài tập 9</a></li>
+            <li><a href="./BaiTap10.html">Bài tập 10</a></li>
+            <li><a href="./BaiTap11.html">Bài tập 11</a></li>
+            <li><a href="./BaiTap12.html">Bài tập 12</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
